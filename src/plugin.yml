@@ -1,0 +1,35 @@
+author: ByCubed7
+description: A Day Counter
+
+version: 1.3.8
+api-version: 1.18
+
+# Impo
+main: io.github.bycubed7.daycounter.Main
+name: DayCounter
+prefix: DayCounter
+
+#depend: [mcMMO, TAB, LuckPerms]
+#softdepend: [LuckPerms]
+load: POSTWORLD
+
+# Permissions
+permissions:
+    daycounter.*:
+        description: Gives access to all commands
+
+        children:
+            daycounter.day: true
+
+    daycounter.day:
+        description: Allows members to use the day command.
+        default: true
+
+# Commands
+commands:
+    day:
+        description: Presents the current day.
+        permission: daycounter.day
+        aliases: [cn]
+        usage: |
+            /day

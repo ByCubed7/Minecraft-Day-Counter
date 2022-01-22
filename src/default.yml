@@ -1,0 +1,6 @@
+# TIP: You can use the '/time set ##d' to set the day count
+#       eg: '/time set 56d' to set to day 56
+
+# Whether to start on day 1 or day 0 | When Minecraft day is 0, Display day is 1
+# default: false -> Display day while be Minecraft day
+startOnDayOne: false
